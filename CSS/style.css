@@ -1,0 +1,237 @@
+body {
+    background-color: #ffb144;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Montserrat','Tahoma','Arial';
+    padding: 10px;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Raleway','Arial';
+    text-decoration-style: initial;
+}
+
+h4 {
+    font-weight: 500;
+    font-family: 'Poppins','Raleway','Arial';
+    text-decoration-style: initial;
+}
+
+p{
+    scale: 2;
+}
+
+header {
+    padding: 10px, 30px, 30px, 30px;
+    text-align: center;
+    background-color:#fd6500;
+    background: linear-gradient(0deg, #ff7316, #fd6500);
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.titulo {
+cursor: pointer;
+}
+
+.titulo:hover {
+color: #ffcc00;
+transition: all 0.75s ease-in-out;
+transform: scale(1.2);
+}
+
+.presentacion {
+    text-align:justify;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #e4ffd0, #e9deb0, #ffd17c);
+    line-height: 2.0;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.imagen1 {
+    display: block; margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+/* FORMULARIO */
+.seccion-formulario {
+    padding: 20px ;
+    margin: 20px;
+    border-radius: 40px;
+    background-color: #e9deb0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.formulario {
+    background: linear-gradient(45deg, #ff7300, #0e9446);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario_input {
+    padding: 10px;
+    margin: 0 1px;
+    background-color: #ffffff;
+    background: linear-gradient(25deg, #dddddd, #ffffff);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.formulario_usuario {
+    padding-right: 240px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.formulario_mail {
+    padding-right: 250px;
+}
+
+.formulario_enviar {
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(45deg, #ff6b00, #ffa500);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.formulario_enviar:hover {
+    transform: scale(1.05);
+    color: #333;
+}
+/* FORMULARIO */
+
+.barra-apartados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #ff9900, #ffcc00);
+    padding: 15px;
+    margin: 15px 0 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.apartado {
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.apartado:hover {
+    transform: scale(1.05);
+    color: #8f8f8f;
+}
+
+footer {
+    background: linear-gradient(to bottom, #e46f1b, #f78114);
+    border-top: 10px solid;
+    border-color: #07752c
+}
+
+.footer {
+    padding: 15px, 15px, 0, 15px;
+    margin: 5px;
+}
+
+.pie-de-pagina {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.link {
+    color: #fda76d;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.catalogo {
+    font-family: Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-align: center;
+    background: linear-gradient(to right, #0dbd42, #ffffff, #ff7b00);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 40px;
+    letter-spacing: 1.5px;
+    
+}
+
+.articulos {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #e4ffd0, #e9deb0, #ffd17c);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bloque {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    border: 4px solid #fc921a;
+    margin: 10px;
+    background: linear-gradient(to bottom, #ff7300, #ff0000);
+    justify-content:center;
+    border-radius: 25px;
+    cursor: pointer;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 390px;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    line-height: 45px;
+
+}
+
+.bloque:hover {
+    transform: scale(1.01);
+    background: linear-gradient(to bottom, #1d9c19, #ff0000);
+    transition: all 0.30s ease-in-out;
+}
+
+.bloque-imagen {
+  width: 100%;
+  max-width: 220px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.producto {
+    color: #dddddd;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #e71f1f, #fd4747, #e71f1f);
+    letter-spacing: 1.3px;
+}
