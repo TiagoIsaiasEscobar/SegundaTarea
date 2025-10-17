@@ -93,12 +93,12 @@ transform: scale(1.2);
 }
 
 .formulario_usuario {
-    padding-right: 240px;
     border-radius: 20px 0px 0px 20px;
+    width: 350px;
 }
 
 .formulario_mail {
-    padding-right: 250px;
+    width: 400px;
 }
 
 .formulario_enviar {
@@ -225,7 +225,7 @@ footer {
   box-sizing: border-box;
 }
 
-.producto {
+.titulo-producto {
     color: #dddddd;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -234,4 +234,26 @@ footer {
     border-radius: 25px;
     background: linear-gradient(90deg, #e71f1f, #fd4747, #e71f1f);
     letter-spacing: 1.3px;
+}
+
+.producto {
+    background-color: #000000;
+}
+
+.tarjeta {
+    background: linear-gradient(90deg, #ff8c21, #ff9b18);
+    margin: 10px;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 0 1px rgba(0,0,0,0.2);
+}
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4px 10px;
+    justify-content:center;
 }
