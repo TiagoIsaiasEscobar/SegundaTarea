@@ -18,6 +18,52 @@ class Repositorio {
         this.usuarios.push(usuario)
     }
 }
+//carrusel//
+
+const btnLeft = document.querySelector(".btn-left"),
+    btnRight = document.querySelector(".btn-right"),
+    slider = document.querySelector("#slider"),
+    svg = document.querySelectorAll(".svg");
+
+btnLeft.addEventListener("click", e => moveToLeft())
+btnRight.addEventListener("click", e => moveToRight())
+
+setInterval(() => {
+    moveToRight()
+}, 3000);
+
+let operacion = 0,
+    contador = 0,
+    widthImg = 100 / svg.length;
+
+function moveToRight() {
+    if (contador >= svg.length-1) {
+        contador = 0;
+        operacion = 0;
+        slider.style.transform = `translate(-${operacion}%)`
+        slider.style.transition = "none";
+        return;
+    }
+    contador++;
+    operacion = operacion + widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+}
+
+function moveToLeft() {
+    contador--;
+    if (contador < 0) {
+        contador = svg.length-1;
+        operacion = widthImg * (svg.length-1);
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "none";
+        return;
+    }
+    operacion = operacion - widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+}
+//carrusel//
 
 //modelos//
 

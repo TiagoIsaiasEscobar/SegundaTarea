@@ -1,7 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    height: 100vh;
     background-color: #ffb144;
-    margin: 0px;
-    padding: 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -38,13 +45,13 @@ header {
 }
 
 .titulo {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .titulo:hover {
-color: #ffcc00;
-transition: all 0.75s ease-in-out;
-transform: scale(1.2);
+    color: #ffcc00;
+    transition: all 0.75s ease-in-out;
+    transform: scale(1.2);
 }
 
 .presentacion {
@@ -52,7 +59,7 @@ transform: scale(1.2);
     border-radius: 40px;
     background: linear-gradient(90deg, #e4ffd0, #e9deb0, #ffd17c);
     line-height: 2.0;
-    padding: 20px;
+    padding: 20px 50px;
     margin: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -63,6 +70,77 @@ transform: scale(1.2);
     max-width: 100%;
     height: auto;
 }
+
+/* CARRUSEL */
+
+.centrar-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.carrusel-principal {
+    position: relative;
+    width: 1848px;
+    height: 576px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.carruseles {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.svg {
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+.svg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000000;
+    transform: translate(0, -50%);
+    transition: -5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #83838367;
+    color: #ffffff;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+/* CARRUSEL */
+
 /* FORMULARIO */
 .seccion-formulario {
     padding: 20px ;
@@ -138,6 +216,8 @@ transform: scale(1.2);
     transform: scale(1.05);
     color: #8f8f8f;
 }
+
+
 
 footer {
     background: linear-gradient(to bottom, #e46f1b, #f78114);
@@ -237,7 +317,25 @@ footer {
 }
 
 .producto {
-    background-color: #000000;
+    background-color: #ffffff;
+    padding: 20px;
+    justify-content: center;
+    margin: 0 25% 20px 25%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.imagen-producto {
+    display: flex;
+    border-radius: 20px;
+}
+
+.informacion-producto {
+    padding: 0;
+    background-color: #ff9a02;
+    border-radius: 20px;
+    border: 10px solid #0dbd42;
+    margin: 0 0 0 10px;
 }
 
 .tarjeta {
