@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="/CSS/reset.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="icon" href="/images/Phenix2.png" type="imagen.png">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <div>
-            <h1>PHENIX Sublimaciones</h1>
+        <div class="titulo">
+            <a href="http://127.0.0.1:5500/HTML/index.html"><h1>PHENIX Sublimaciones</h1></a>
         </div>
             <h3>RENACE TU ESTILO CON ARTE PERSONALIZADO</h3>
         <div class="barra-apartados">
@@ -22,10 +23,42 @@
         </div>
     </header>
     <main>
-        <div class="producto">
+     <div class="centrar-carrusel">
+            <div class="carrusel-principal">
+                <div class="carruseles" id="slider">
+                    <section class="svg">
+                        <img src="/svg/1.svg">
+                    </section>
+                    <section class="svg">
+                        <img src="/svg/2.svg">
+                    </section>
+                    <section class="svg">
+                        <img src="/svg/3.svg">
+                    </section>
+                    <section class="svg">
+                        <img src="/svg/4.svg">
+                    </section>
+                </div>
+                <div class="btn-left"><i class='bxr  bx-caret-left'  ></i> </div>
+                <div class="btn-right"><i class='bxr  bx-caret-right'  ></i> </div>
+            </div>
+        </div>
+        <div class="titulo-producto">
             <h1>TAZA SUBLIMADA CON ASA DE CORAZÓN</h1>
         </div>
+        <div id="contenedor"></div>
     </main>
-    
+    <footer>
+        <div class="footer">
+            <h5>TIAGO ISAIAS ESCOBAR</h5>
+            <h5>@todos los derechos reservados</h5>
+                <div class="pie-de-pagina">
+                    <div class="link"><a href="https://www.facebook.com/profile.php?id=61580410355408"><h3>@Facebook</h3></div>
+                    <div class="link"><a href="https://www.instagram.com/phenix_sublimaciones/"><h3>@Instagram</h3></div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <script src="/SCRIPS/index.js"></script> 
 </body>
 </html>
