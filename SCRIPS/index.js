@@ -25,12 +25,25 @@ const btnLeft = document.querySelector(".btn-left"),
     slider = document.querySelector("#slider"),
     svg = document.querySelectorAll(".svg");
 
-btnLeft.addEventListener("click", e => moveToLeft())
-btnRight.addEventListener("click", e => moveToRight())
+btnLeft.addEventListener("click", e => {
+    moveToLeft();
+    resetInterval();
+});
+btnRight.addEventListener("click", e => {
+    moveToRight();
+    resetInterval();
+});
 
-setInterval(() => {
-    moveToRight()
-}, 5000);
+let autoSlide = setInterval(() => {
+    moveToRight();
+}, 3000);
+
+function resetInterval() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+        moveToRight();
+    }, 5000)
+}
 
 let operacion = 0,
     contador = 0,
