@@ -125,3 +125,5 @@ send.addEventListener("click", (event)=>{
     tarjeta.forEach(div => contenedor.appendChild(div))
     console.log(repositorio.traeTodosLosUsuarios());
 });
+
+///subir imagenes///

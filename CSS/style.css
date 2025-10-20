@@ -300,43 +300,10 @@ footer {
 }
 
 .bloque-imagen {
-  width: 100%;
-  max-width: 220px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.titulo-producto {
-    color: #dddddd;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 25px;
-    background: linear-gradient(90deg, #e71f1f, #fd4747, #e71f1f);
-    letter-spacing: 1.3px;
-}
-
-.producto {
-    background-color: #ffffff;
-    padding: 20px;
-    justify-content: center;
-    margin: 0 25% 20px 25%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.imagen-producto {
-    display: flex;
-    border-radius: 20px;
-}
-
-.informacion-producto {
-    padding: 0;
-    background-color: #ff9a02;
-    border-radius: 20px;
-    border: 10px solid #0dbd42;
-    margin: 0 0 0 10px;
+    width: 100%;
+    max-width: 220px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .tarjeta {
@@ -357,12 +324,174 @@ footer {
     justify-content:center;
 }
 
-/*inputs para productos*/
-.subir-imagen {
-    background-color: #000000;
+/*productos*/
+
+.producto {
+    display: flex;
+    justify-content: center;
 }
 
+.informacion-producto {
+    display: flex;
+    margin: 0 0 40px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); ;
+    border-radius: 15px;
+}
 
+.img-venta {
+    background-color: #ffffff;
+    border: 10px solid #ffffff;
+    border-radius: 15px 0 0 15px;
+}
 
+.color-venta {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #0d7047, #198d32);
+    border-radius: 0 15px 15px 0;
+}
 
-/*inputs para productos*/
+.inf-venta {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #0b5e27;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+}
+
+#cantidad {
+    width: 60px;
+    padding: 8px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.boton-compra {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 10px 135px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-compra:hover {
+    background-color: #E65C00;
+}
+/*personalización*/
+
+.titulo-producto {
+    color: #dddddd;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin: 20px 0;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #d8701b, #e77736, #d8701b);
+    letter-spacing: 1.3px;
+}
+
+.input-venta{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upload-area {
+    width: 100%;
+    height: 150px;
+    border: 4px dashed #126939;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #dfffcc;
+}
+
+.upload-area .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.boton-img {
+    color: #ffffff;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-color: #FF6F00;
+    transition: background-color 0.3s ease;
+}
+
+.boton-img:hover {
+    background-color: #E65C00;
+}
+
+.selector-color {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.selector-color p {
+    margin: 0 30px 7px 30px;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.color-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .color-box {
+    border: 3px solid #007BFF;
+}
+
+.blanco { background-color: white; }
+.negro { background-color: black; }
+.rojo { background-color: rgb(255, 31, 31); }
+.verde { background-color: rgb(8, 168, 8); }
+.purple { background-color: rgb(158, 6, 158); }
+.orange { background-color: rgb(235, 143, 5); }
+.light-blue { background-color: rgb(0, 191, 255); }
+.dark-blue { background-color: rgb(0, 0, 255); }
+
+/*personalización*/

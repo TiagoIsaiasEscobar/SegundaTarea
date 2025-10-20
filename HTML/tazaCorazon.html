@@ -43,8 +43,71 @@
                 <div class="btn-right"><i class='bxr  bx-caret-right'  ></i> </div>
             </div>
         </div>
-        <div class="titulo-producto">
-            <h1>TAZA SUBLIMADA CON ASA DE CORAZÓN</h1>
+ <div class="producto">
+            <div class="informacion-producto">
+                <section class="img-venta">
+                  <img src="/images/taza corazon con logo.png" alt="taza común">
+                </section>
+                <section class="color-venta">
+                    <div class="titulo-producto">
+                        <h1>TAZA CORAZÓN SUBLIMABLE</h1>
+                    </div>
+                    <section class="inf-venta">
+                        <div class="personalizar-producto">
+                            <form class="input-venta" action="/upload" method="post" enctype="multipart/form-data">
+                                <div class="upload-area" id="upload-area">
+                                    <div class="icon">⬆️</div>
+                                    <p class="input-venta" style="scale:1.15">Arrastrá archivos a cualquier lugar para subirlos</p>
+                                    <p class="input-venta" style="scale:1; font-style: italic;">Se recomienda que sea 22cm (altura) x 9cm (anchor)</p>
+                                    <input type="file" id="fileInput" name="image" accept="image/*" hidden>
+                                </div> 
+                                <button class="boton-img" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </section>
+                    <div class="selector-color">
+                        <p style="font-size: 10px">Elegí un color:</p>
+                        <label>
+                            <input type="radio" name="color" value="white" checked>
+                            <span class="color-box blanco"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="black">
+                            <span class="color-box negro"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="red">
+                            <span class="color-box rojo"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="green">
+                            <span class="color-box verde"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="purple">
+                            <span class="color-box purple"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="orange">
+                            <span class="color-box orange"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="light-blue">
+                            <span class="color-box light-blue"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="color" value="dark-blue">
+                            <span class="color-box dark-blue"></span>
+                        </label>
+                    </div>
+                    <section class="comprar">
+                        <label for="cantidad">Cantidad:</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+                            <button type="button" class="boton-compra">Comprar</button>
+                    </section>
+
+                </section>    
+            </div>
         </div>
         <div id="contenedor"></div>
     </main>
