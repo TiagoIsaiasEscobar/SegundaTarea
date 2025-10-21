@@ -495,3 +495,25 @@ input[type="radio"]:checked + .color-box {
 .dark-blue { background-color: rgb(0, 0, 255); }
 
 /*personalización*/
+
+.pack-cumpleaños img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.presentacion2 {
+    font-size: 13px;
+    text-align:justify;
+    text-align: center;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #e4ffd0, #e9deb0, #ffd17c);
+    line-height: 2.0;
+    padding: 20px 50px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* askofjasoijfijsaiopf */
+
